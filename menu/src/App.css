@@ -74,13 +74,13 @@ section h2::after { content: ''; flex: 1; height: 2px; background: linear-gradie
 }
 .hero-lang { position: absolute; top: 14px; inset-inline-end: 18px; z-index: 5; }
 .hero-logo {
-  position: absolute; top: 50%; inset-inline-start: 24px; transform: translateY(-50%); z-index: 5;
-  height: 110px; padding: 10px 18px; border-radius: 18px;
+  position: absolute; top: 14px; inset-inline-start: 18px; transform: none; z-index: 5;
+  height: 72px; padding: 8px 14px; border-radius: 14px;
   background: rgba(242,235,216,.97); border: 3px solid #F2EBD8;
   box-shadow: 0 10px 25px rgba(0,0,0,.45), 0 0 0 5px rgba(110,115,80,.5);
   transition: transform .3s;
 }
-.hero-logo:hover { transform: translateY(-50%) scale(1.06) rotate(-2deg); }
+.hero-logo:hover { transform: scale(1.06) rotate(-2deg); }
 .hero-overlay {
   position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(95,100,67,.35), rgba(95,100,67,.65));
   display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 6px;
