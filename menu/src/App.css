@@ -22,13 +22,13 @@ body { background: #F4EEDF; color: #3b4030; }
   .mobile-brand { display: block; }
   .cats { padding: 10px 12px; gap: 6px; }
   .cat-btn { padding: 8px 14px; font-size: .85rem; }
-  .hero { height: 170px; }
+  .hero { height: 190px; }
   .hero-logo {
-    height: 56px; padding: 6px 10px; border-radius: 12px;
-    top: 12px; bottom: auto; inset-inline-start: 12px; transform: none;
+    height: 48px; padding: 4px 10px; border-radius: 10px;
+    top: 8px; bottom: auto; inset-inline-start: auto; left: 50%; transform: translateX(-50%);
   }
-  .hero-logo:hover { transform: none; }
-  .hero-overlay { padding: 0 16px; }
+  .hero-logo:hover { transform: translateX(-50%); }
+  .hero-overlay { padding: 0 16px 12px; justify-content: flex-end; }
   .hero-overlay h2 { font-size: 1.4rem; }
   .hero-overlay p { font-size: .8rem; }
   .floats { font-size: 1.1rem; gap: 10px; margin-top: 4px; }
