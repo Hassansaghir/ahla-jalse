@@ -124,18 +124,12 @@ const data = [
 export default function App() {
   const [lang, setLang] = useState('ar')
   const [cat, setCat] = useState('all')
-  const [view, setView] = useState('auto') // 'auto' | 'mobile' | 'desktop'
   const t = (o) => o[lang]
-
-  const viewClass = view === 'mobile' ? 'force-mobile' : view === 'desktop' ? 'force-desktop' : ''
-  const nextView = view === 'auto' ? 'mobile' : view === 'mobile' ? 'desktop' : 'auto'
-  const viewLabel = view === 'mobile' ? '📱 موبايل' : view === 'desktop' ? '🖥️ ديسكتوب' : '🔄 تلقائي'
 
   const visible = cat === 'all' ? data : data.filter(c => c.id === cat)
 
   return (
-    <div dir={lang === 'ar' ? 'rtl' : 'ltr'} className={`app ${viewClass}`}>
-      <button className="view-toggle" onClick={() => setView(nextView)}>{viewLabel}</button>
+    <div dir={lang === 'ar' ? 'rtl' : 'ltr'} className="app">
       <div className="bg-store"></div>
       <div className="hero" style={{ backgroundImage: `url(/store.jpg), url(${ODOO_URL}/web/image/ir.attachment/1160/raw)` }}>
         <button className="lang-btn hero-lang" onClick={() => setLang(lang === 'ar' ? 'en' : 'ar')}>

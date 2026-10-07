@@ -18,48 +18,26 @@ body { background: #F4EEDF; color: #3b4030; }
   position: sticky; top: 0; z-index: 101; box-shadow: 0 2px 8px rgba(0,0,0,.25);
 }
 @media (max-width: 768px) {
-  .app:not(.force-desktop) .mobile-brand { display: block; }
-  .app:not(.force-desktop) .cats { top: 46px !important; padding: 10px 12px; gap: 6px; }
-  .app:not(.force-desktop) .cat-btn { padding: 8px 14px; font-size: .85rem; }
-  .app:not(.force-desktop) .hero { height: 170px; }
-  .app:not(.force-desktop) .hero-logo {
+  .mobile-brand { display: block; }
+  .cats { top: 46px !important; padding: 10px 12px; gap: 6px; }
+  .cat-btn { padding: 8px 14px; font-size: .85rem; }
+  .hero { height: 170px; }
+  .hero-logo {
     height: 56px; padding: 6px 10px; border-radius: 12px;
     top: 12px; bottom: auto; inset-inline-start: 12px; transform: none;
   }
-  .app:not(.force-desktop) .hero-logo:hover { transform: none; }
-  .app:not(.force-desktop) .hero-overlay { padding: 0 16px; }
-  .app:not(.force-desktop) .hero-overlay h2 { font-size: 1.4rem; }
-  .app:not(.force-desktop) .hero-overlay p { font-size: .8rem; }
-  .app:not(.force-desktop) .floats { font-size: 1.1rem; gap: 10px; margin-top: 4px; }
-  .app:not(.force-desktop) .lang-btn { padding: 4px 14px; font-size: .8rem; }
-  .app:not(.force-desktop) .main { padding: 16px 12px 60px; }
-  .app:not(.force-desktop) section h2 { font-size: 1.2rem; }
-  .app:not(.force-desktop) .card .info { padding: 10px; }
-  .app:not(.force-desktop) .card .name { font-size: .9rem; }
-  .app:not(.force-desktop) .card .price { font-size: .8rem; padding: 4px 12px; }
+  .hero-logo:hover { transform: none; }
+  .hero-overlay { padding: 0 16px; }
+  .hero-overlay h2 { font-size: 1.4rem; }
+  .hero-overlay p { font-size: .8rem; }
+  .floats { font-size: 1.1rem; gap: 10px; margin-top: 4px; }
+  .lang-btn { padding: 4px 14px; font-size: .8rem; }
+  .main { padding: 16px 12px 60px; }
+  section h2 { font-size: 1.2rem; }
+  .card .info { padding: 10px; }
+  .card .name { font-size: .9rem; }
+  .card .price { font-size: .8rem; padding: 4px 12px; }
 }
-/* Forced mobile view (toggle button) */
-.app.force-mobile { max-width: 430px; margin-inline: auto; box-shadow: 0 0 40px rgba(0,0,0,.4); }
-.app.force-mobile .mobile-brand { display: block; }
-.app.force-mobile .cats { top: 46px !important; padding: 10px 12px; gap: 6px; }
-.app.force-mobile .cat-btn { padding: 8px 14px; font-size: .85rem; }
-.app.force-mobile .hero { height: 170px; }
-.app.force-mobile .hero-logo {
-  height: 56px; padding: 6px 10px; border-radius: 12px;
-  top: 12px; bottom: auto; inset-inline-start: 12px; transform: none;
-}
-.app.force-mobile .hero-logo:hover { transform: none; }
-.app.force-mobile .hero-overlay { padding: 0 16px; }
-.app.force-mobile .hero-overlay h2 { font-size: 1.4rem; }
-.app.force-mobile .hero-overlay p { font-size: .8rem; }
-.app.force-mobile .floats { font-size: 1.1rem; gap: 10px; margin-top: 4px; }
-.app.force-mobile .lang-btn { padding: 4px 14px; font-size: .8rem; }
-.app.force-mobile .main { padding: 16px 12px 60px; }
-.app.force-mobile section h2 { font-size: 1.2rem; }
-.app.force-mobile .card .info { padding: 10px; }
-.app.force-mobile .card .name { font-size: .9rem; }
-.app.force-mobile .card .price { font-size: .8rem; padding: 4px 12px; }
-.app.force-mobile .grid { grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); gap: 12px; }
 .cta {
   margin-top: 14px; background: #F2EBD8; color: #5f6443; border: none; cursor: pointer;
   padding: 12px 32px; border-radius: 999px; font-weight: 900; font-size: 1.05rem;
@@ -157,13 +135,6 @@ section h2 {
 }
 
 @media (max-width: 600px) {
-  .app:not(.force-desktop) .grid { grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); gap: 12px; }
-  .app:not(.force-desktop) .header h1 { font-size: 1.2rem; }
+  .grid { grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); gap: 12px; }
+  .header h1 { font-size: 1.2rem; }
 }
-.app .view-toggle {
-  position: fixed; bottom: 16px; inset-inline-end: 16px; z-index: 200;
-  background: #5f6443; color: #F2EBD8; border: 2px solid #F2EBD8; border-radius: 999px;
-  padding: 10px 18px; font-weight: 900; cursor: pointer; font-size: .9rem;
-  box-shadow: 0 6px 16px rgba(0,0,0,.35); transition: all .25s;
-}
-.app .view-toggle:hover { transform: scale(1.06); background: #6E7350; }
