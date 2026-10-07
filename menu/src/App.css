@@ -12,14 +12,15 @@ body { background: #F4EEDF; color: #3b4030; }
   animation: slowzoom 18s ease-in-out infinite alternate;
 }
 @keyframes slowzoom { from { transform: scale(1); } to { transform: scale(1.12); } }
+.app .sticky-nav { position: sticky; top: 0; z-index: 101; }
 .app .mobile-brand {
   display: none; background: #5f6443; color: #F2EBD8; text-align: center;
   font-weight: 900; font-size: 1.25rem; padding: 10px; letter-spacing: .5px;
-  position: sticky; top: 0; z-index: 101; box-shadow: 0 2px 8px rgba(0,0,0,.25);
+  box-shadow: 0 2px 8px rgba(0,0,0,.25);
 }
 @media (max-width: 768px) {
   .mobile-brand { display: block; }
-  .cats { top: 46px !important; padding: 10px 12px; gap: 6px; }
+  .cats { padding: 10px 12px; gap: 6px; }
   .cat-btn { padding: 8px 14px; font-size: .85rem; }
   .hero { height: 170px; }
   .hero-logo {
@@ -97,7 +98,7 @@ section h2::after { content: ''; flex: 1; height: 2px; background: linear-gradie
 /* ===== Category navbar ===== */
 .app .cats {
   display: flex; gap: 8px; overflow-x: auto; padding: 12px 16px; background: #6E7350;
-  position: sticky; top: 0; z-index: 99; box-shadow: 0 4px 12px rgba(70,75,50,.3);
+  z-index: 99; box-shadow: 0 4px 12px rgba(70,75,50,.3);
   scrollbar-width: thin;
 }
 .cat-btn {

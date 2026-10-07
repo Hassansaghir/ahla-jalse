@@ -149,6 +149,7 @@ export default function App() {
         </div>
       </div>
 
+      <div className="sticky-nav">
       <div className="mobile-brand">احلى جلسة ☕</div>
 
       <nav className="cats">
@@ -161,6 +162,7 @@ export default function App() {
           </button>
         ))}
       </nav>
+      </div>
 
       <main className="main">
         <AnimatePresence mode="wait">
