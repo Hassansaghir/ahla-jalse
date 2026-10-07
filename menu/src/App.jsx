@@ -131,7 +131,7 @@ export default function App() {
   return (
     <div dir={lang === 'ar' ? 'rtl' : 'ltr'} className="app">
       <div className="bg-store"></div>
-      <div className="hero" style={{ backgroundImage: `url(/store.jpg), url(${ODOO_URL}/web/image/ir.attachment/1160/raw)` }}>
+      <div className="hero" style={{ backgroundImage: `url(${ODOO_URL}/web/image/ir.attachment/1160/raw)` }}>
         <button className="lang-btn hero-lang" onClick={() => setLang(lang === 'ar' ? 'en' : 'ar')}>
           {lang === 'ar' ? 'EN' : 'عربي'}
         </button>

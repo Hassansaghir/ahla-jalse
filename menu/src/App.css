@@ -7,7 +7,7 @@ body { background: #F4EEDF; color: #3b4030; }
 .app { min-height: 100vh; position: relative; }
 .bg-store {
   position: fixed; inset: 0; z-index: -1;
-  background: url(/store.jpg) center/cover no-repeat;
+  background: url(https://ahla-jalse.odoo.com/web/image/ir.attachment/1160/raw) center/cover no-repeat;
   filter: blur(4px) brightness(.55);
   animation: slowzoom 18s ease-in-out infinite alternate;
 }
