@@ -2,7 +2,8 @@ import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import './App.css'
 
-// Product images downloaded at build time in /public/images — no Odoo API used
+// 👉 ضع رابط سيرفر Odoo هنا (مثال: "http://192.168.1.10:8069")
+const ODOO_URL = 'https://ahla-jalse.odoo.com'
 
 const data = [
   { id: 18, name: { en: 'Club Sandwiches', ar: 'ساندويشات كلوب' }, items: [
@@ -130,11 +131,11 @@ export default function App() {
   return (
     <div dir={lang === 'ar' ? 'rtl' : 'ltr'} className="app">
       <div className="bg-store"></div>
-      <div className="hero" style={{ backgroundImage: 'url(/store-bg.jpg)' }}>
+      <div className="hero" style={{ backgroundImage: `url(${ODOO_URL}/web/image/ir.attachment/1160/raw)` }}>
         <button className="lang-btn hero-lang" onClick={() => setLang(lang === 'ar' ? 'en' : 'ar')}>
           {lang === 'ar' ? 'EN' : 'عربي'}
         </button>
-        <img className="hero-logo" src="/logo.png" alt="Ahla Jalse" onError={(e) => { e.target.style.display = 'none' }} />
+        <img className="hero-logo" src={`${ODOO_URL}/web/image/website/1/logo/ahla-jalse?unique=06af06e`} alt="Ahla Jalse" onError={(e) => { e.target.style.display = 'none' }} />
         <div className="hero-overlay">
           <motion.h2 initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: .6 }}>
             {lang === 'ar' ? '☕ أحلا جلسة' : '☕ Ahla Jalse'}
